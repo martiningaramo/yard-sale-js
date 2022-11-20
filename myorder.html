@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .myorder {
+            font-size: var(--lg);
+            margin-top: 40px;
+            margin-bottom: 48px;
+        }
+        .order-container {
+            margin: 20px 20px 20px 20px;
+        }
+        .order-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+        .articles, .article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .articles {
+            background-color: var(--text-input-field);
+            border-radius: 12px;
+            padding: 0 16px 0 8px;
+        }
+        .order-info {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            display: inline-block;
+            margin-left: 8px;
+        }
+        .date {
+            font-weight: bold;
+            color: var(--black);
+            margin-bottom: -12px;
+        }
+        .articles-number {
+            color: var(--very-light-pink);
+        }
+        .total-price, .article-price {
+            font-weight: bold;
+            color: rgb(94, 94, 94);
+        }
+        .article-info {
+            display: flex;
+            align-items: center;
+            gap: 20px
+        }
+        .article-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 25%;
+            object-fit: cover;
+        }
+        .article-title {
+            color: grey;
+            font-size: var(--sm)
+        }
+        @media (min-width:640px){
+            .order-container {
+                width: 400px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="order-container">
+        <h1 class="myorder">My order</h1>
+
+        <div class="order-menu">
+            <div class="articles">
+                <div class="order-info">
+                    <p class="date">04.25.2021</p>
+                    <p class="articles-number">6 articles</p>
+                </div>
+                <div>
+                    <p class="total-price">$ 560,00</p>
+                </div>
+            </div>
+
+            <div class="article">
+                <div class="article-info">
+                    <img class="article-img" src="https://images.pexels.com/photos/386025/pexels-photo-386025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <p class="article-title">Minivan VW</p>
+                </div>
+                <div>
+                    <p class="article-price">$ 120,00</p>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-info">
+                    <img class="article-img" src="https://images.pexels.com/photos/386025/pexels-photo-386025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <p class="article-title">Minivan VW</p>
+                </div>
+                <div>
+                    <p class="article-price">$ 120,00</p>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-info">
+                    <img class="article-img" src="https://images.pexels.com/photos/386025/pexels-photo-386025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <p class="article-title">Minivan VW</p>
+                </div>
+                <div>
+                    <p class="article-price">$ 120,00</p>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-info">
+                    <img class="article-img" src="https://images.pexels.com/photos/386025/pexels-photo-386025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <p class="article-title">Minivan VW</p>
+                </div>
+                <div>
+                    <p class="article-price">$ 120,00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
