@@ -6,7 +6,7 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const mobileMenuClose = document.querySelector('.close-img');
 const cardsContainer = document.querySelector('.cards-container');
 const cartBtn = document.querySelector('.nav-cart');
-const asideCart = document.querySelector('.product-detail');
+const asideCart = document.querySelector('.product-cart');
 const asideCartArrow = document.querySelector('.title-container');
 
 /* Events Listeners */
